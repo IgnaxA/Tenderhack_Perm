@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <img src="images/logo.svg" alt="" class="logo">
+            <div class="tabs">
+                <div class="tab selected" id="tab_info">Основная информация</div>
+                <div class="tab" id ="tab_products">Товары и услуги</div>
+            </div>
+        </div>        
+
+        <div id="information_container" class="content_wrapper hidden">
+            <div class="param">
+                <p class="param_name">Поставщик</p>
+                <input type="text" placeholder="Анатолий">
+            </div>
+
+            <div class="param">
+                <p class="param_name">Поставщик</p>
+                <input type="text" placeholder="Анатолий">
+            </div>
+
+            <div class="exit_section">
+                <div class="exit_section_button" id="quit">
+                    <img src="images/quit.svg" alt="">
+                    <span>Выйти</span>
+                </div>
+                <div class="exit_section_button" id="save">
+                    <img src="images/save.svg" alt="">
+                    <span>Сохранить</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="products_container" class="content_wrapper hidden">
+            <div class="search_box">
+                <img src="images/search.svg" alt="" class="search_ico">
+                <input type="text" class="search" placeholder="Введите название товара">
+                <img src="images/cross.svg" alt="" class="reset hidden">
+            </div>
+            <div class="edit_box">
+                <div id="edit" class="edit_box_button">
+                    <img src="images/edit.svg" alt="">
+                    <p>Редактировать</p>
+                </div>    
+                <div id="edit_box_save" class="edit_box_button">
+                    <img src="images/alter_save.svg" alt="">
+                    <p>Сохранить</p>
+                </div>
+            </div>
+
+            <!-- ШАБЛОН ДЛЯ JS'a -->
+            <div class="product">
+                <div class="checkbox">
+                    <img src="images/checkmark.svg" alt="" class="checkmark hidden">
+                </div>
+                <span class="product_name">Коза дойная 18 месяцев ага да</span>
+                <span class="product_count">1 шт.</span>
+                <span class="product_cost">322 тыс. руб.</span>
+            </div>
+            <div class="product">
+                <div class="checkbox">
+                    <img src="images/checkmark.svg" alt="" class="checkmark hidden">
+                </div>
+                <span class="product_name">Коза дойная 18 месяцев ага да</span>
+                <span class="product_count">1 шт.</span>
+                <span class="product_cost">322 тыс. руб.</span>
+            </div>
+            
+        </div>
+
+        <div class="editing_container">
+            <div class="param">
+                <p class="param_name">Поставщик</p>
+                <input type="text" placeholder="Анатолий">
+            </div>
+
+            <div class="param">
+                <p class="param_name">Поставщик</p>
+                <input type="text" placeholder="Анатолий">
+            </div>
+
+            <div class="pages_container">
+                <img src="images/arrow_left_gray.svg" alt="" id="left_arrow">
+                <p id="pages">1/22</p>
+                <img src="images/arrow_right_gray.svg" alt="" id="right_arrow">
+            </div>
+        </div>
+           
+        <footer>
+            <p class="copyright">© Коза 2024</p>
+            <p class="law">Портал работает в соответствии с 44-ФЗ</p>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</body>
+</html>
