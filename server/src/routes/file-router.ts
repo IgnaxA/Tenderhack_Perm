@@ -1,5 +1,5 @@
 import express, {Router} from "express";
-import {FileController} from "../controllers/file-controller";
+import {FileController} from "../rest/controllers/file-controller";
 
 export class FileRouter {
     private readonly fileRouter: Router;
