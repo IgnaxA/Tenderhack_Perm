@@ -6,7 +6,7 @@ bot = telebot.TeleBot("6940057962:AAEDWHMl6NLy0us00mcWK0cN5pZPJnoBIxU")
 def gen_markup():
 	markup = InlineKeyboardMarkup()
 	markup.row_width = 2
-	web_app = WebAppInfo("https://127.0.0.1:8080/", provider = "Анатолий")
+	web_app = WebAppInfo("https://94.250.255.239/:8080/", provider = "Анатолий")
 	markup.add(InlineKeyboardButton("Изменить", web_app=web_app),
 			InlineKeyboardButton("Сформировать документ", callback_data="gen"))
 	return markup
